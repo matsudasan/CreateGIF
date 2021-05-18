@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gifメーカー</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gifメーカー</h1>
+        <div class="upload-area">
+            <div id="drop-zone">
+                <p>ここに動画をドロップ</p>
+            </div>
+            <p style="margin: 20px 0px 0px 0px;">またはこちらからアップロード</p>
+            <input type="file" accept="video/*" id="input-file">
+        </div>
+        <div class="exit-area ">
+            <video id="video" controls class=""></video>
+            <p id="current-time">現在の再生時間：0秒</p>
+            <form id="form">
+                <label for="start-time">開始時間：</label><input type="number" name="start_time" min="0">秒<br>
+                <label for="end-time">終了時間：</label><input type="number" name="end_time" min="0">秒
+            </form>
+            <div class="description">
+                <p>これらの指定は秒で行なってください</p>
+                <span>例：1分=60秒　2分=120秒</span>
+            </div>
+           <button id="button">完成したGIFを見る</button>
+            <div class="gif-area">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
