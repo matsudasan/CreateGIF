@@ -11,7 +11,7 @@ const gifImg = document.getElementById('gif');
 const download = document.getElementById('download')
 
 const copyVideo = document.createElement('video');
-//copyVideo.muted = true
+copyVideo.muted = true
 let player
 
 const dragover = (e) => {
