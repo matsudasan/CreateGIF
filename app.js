@@ -64,10 +64,13 @@ const timeUpdate = () => {
 
 const createGIF = () => {
     if (parseInt(form.start_time.value) >= parseInt(form.end_time.value)) {
-        alert('開始時間は終了時間より前に指定してください')
+        alert('開始時間は終了時間より前に指定して下さい')
         return
     } else if (form.start_time.value === "" || form.end_time.value === "") {
-        alert('開始時間または終了時間を指定してください')
+        alert('開始時間または終了時間を指定して下さい')
+        return
+    }else if(parseInt(form.end_time.value)>video.duration){
+        alert('終了時間が動画の長さより短くなるように指定して下さい')
         return
     }
     //gifの設定
