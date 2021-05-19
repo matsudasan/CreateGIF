@@ -71,6 +71,20 @@ form {
     background: #67c5ff;
     color: white;
 }
+#gif{
+    margin-top: 15px;
+}
+
+#download {
+    color: #fff;
+    background-color: #eb6100;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
 
 .none {
     display: none;

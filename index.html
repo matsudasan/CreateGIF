@@ -18,7 +18,7 @@
             <p style="margin: 20px 0px 0px 0px;">またはこちらからアップロード</p>
             <input type="file" accept="video/*" id="input-file">
         </div>
-        <div class="exit-area ">
+        <div class="exit-area none">
             <video id="video" controls class=""></video>
             <p id="current-time">現在の再生時間：0秒</p>
             <form id="form">
@@ -30,12 +30,16 @@
                 <span>例：1分=60秒　2分=120秒</span>
             </div>
            <button id="button">完成したGIFを見る</button>
+           <h1 id="progress"></h1>
             <div class="gif-area">
-                <canvas id="canvas"></canvas>
+                <canvas id="canvas" class="none"></canvas>
+                <img src="" id="gif">
             </div>
+            <a id="download" class="none">GIFをダウンロード</a>
         </div>
     </div>
 </body>
+<script src="./dist/gif.js"></script>
 <script src="app.js"></script>
 
 </html>
